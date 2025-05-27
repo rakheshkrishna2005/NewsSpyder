@@ -1,98 +1,56 @@
-# News Spyder - AI-Powered Cybersecurity News Aggregator
+# 📰 News Spyder - AI Powered Cybersecurity News Aggregator
 
-News Spyder is an intelligent news aggregation platform that collects, analyzes, and presents cybersecurity news using advanced NLP techniques and AI models.
+🌐 [**Live Deployed Website**](https://news-spyder.vercel.app/)
 
-## Live Deployment
-[Live Website - News Spyder](https://news-spyder.vercel.app/)
+## 🚀 Key Features
 
-## Core Features
+* 📰 **Automated Scraping** — Powered by **Scrapy + BeautifulSoup**, fetching real-time data from *The Hacker News*
+* 🧠 **LLM-Powered Structuring** — Clean, concise content via **Google Gemini AI**
+* 🏷️ **Smart Keywords** — Extracted using **TF-IDF**, **RAKE**, **TextRank**, and **LSA**
+* 🌐 **Modern UI** — Built with **Next.js 14**, **Tailwind CSS**, and **shadcn/ui**
 
-- **Automated News Scraping**: Scrapes cybersecurity news from The Hacker News
-- **AI-Powered Analysis**: Uses Gemini AI for content structuring and summarization
-- **Keyword Extraction**: Implements multiple NLP algorithms (TF-IDF, RAKE, TextRank) for keyword extraction
-- **Responsive UI**: Modern, responsive interface built with Next.js and Tailwind CSS
+## ⚙️ Tech Stack
 
-## Tech Stack
+| Layer       | Tech                                                   |
+| ----------- | ------------------------------------------------------ |
+| 🔍 Scraping | `Scrapy`, `BeautifulSoup4`, `MongoDB Atlas`            |
+| 🔤 NLP      | `nltk`, `scikit-learn`, `NetworkX`, `TextRank`, `RAKE` |
+| 🧠 AI/LLM   | `Google Gemini`                           |
+| 📦 Backend  | `MongoDB Atlas`, `Aggregation Pipelines`                 |
+| 💻 Frontend | `Next.js`, `TypeScript`, `Tailwind`, `shadcn/ui`       |
 
-### Web Scraping
-- **Scrapy (2.11.0)**
-  - Asynchronous web crawling framework
-  - Custom spiders for The Hacker News
-  - Pipeline integration with MongoDB
-- **BeautifulSoup4 (4.12.2)**
-  - HTML parsing and data extraction
-  - Clean text processing
-  - Tag-based content filtering
+## 🧩 Core Modules
 
-### Natural Language Processing
-- **NLTK (3.8.1)**
-  - Text tokenization and POS tagging
-  - Stop word removal
-  - Language detection
-- **scikit-learn**
-  - TF-IDF vectorization
-  - LSA (Latent Semantic Analysis)
-- **NetworkX**
-  - Graph-based TextRank implementation
-  - Keyword relationship mapping
+### 🕸️ Scraper
 
-### AI and Machine Learning
-- **Google Gemini AI**
-  - Content structuring and organization
-  - Article summarization
-  - Entity recognition
-- **LangChain**
-  - AI model integration
-  - Prompt management
-  - Chain of thought processing
+* `Scrapy` spider + `BeautifulSoup` cleaning
+* Asynchronous crawl pipeline to **MongoDB Atlas**
 
-### Database and Storage
-- **MongoDB Atlas**
-  - Document-based data storage
-  - Full-text search capabilities
-  - Real-time data updates
-  - Aggregation pipelines
+### 🧠 LLM Processor
 
-### Frontend Development
-- **Next.js 14**
-- **TypeScript**
-- **Tailwind CSS**
-- **shadcn/ui Components**
+* Content is parsed and structured via **Gemini AI**
+* Summarization via **Gemini AI** by fetching MongoDB
 
-## Technical Modules
+### 🏷️ Keyword Engine
 
-### 1. Scraping Module
-- Scrapy framework for efficient web crawling
-- BeautifulSoup4 for HTML parsing
-- MongoDB Atlas for raw data storage
+* NLP stack:
 
-### 2. Keyword Extraction Module
-- TF-IDF for term importance scoring
-- RAKE algorithm for rapid keyword extraction
-- TextRank for graph-based keyword analysis
+  * `TF-IDF` for relevance
+  * `RAKE` for phrase scoring
+  * `TextRank` via `NetworkX` for semantic relations
 
-### 3. Web Application Module
-- Server-side rendering with Next.js
-- RESTful API endpoints for data access
-- Responsive UI components with shadcn/ui
-- Dark/Light theme support
+### 🖥️ Frontend
 
-## Architecture
+* Fully responsive **Next.js 14** app
+* SSR, dynamic routes, fuzzy search, dark mode
 
-This is the high-level architecture of News Spyder showing the data flow from scraping to presentation:
+## 🏗️ System Architecture
 
-![Architecture Diagram](https://github.com/rakheshkrishna2005/NewsSpyder/public/architecture.png)
+![Architecture Diagram](https://github.com/rakheshkrishna2005/NewsSpyder/blob/main/public/architecture.png)
 
-## Website Screenshots
+## 📸 UI Snapshots
 
-### Home Page
-![Home Page](https://github.com/rakheshkrishna2005/NewsSpyder/public/1.png)
-
-### Articles List
-![Articles List](https://github.com/rakheshkrishna2005/NewsSpyder/public/2.png)
-
-### Article Detail
-![Article Detail](https://github.com/rakheshkrishna2005/NewsSpyder/public/3.png)
-
-### Search and Filter
-![Search and Filter](https://github.com/rakheshkrishna2005/NewsSpyder/public/4.png)
+![Home Page](https://github.com/rakheshkrishna2005/NewsSpyder/blob/main/public/1.png)
+![Articles List](https://github.com/rakheshkrishna2005/NewsSpyder/blob/main/public/2.png)
+![Article Detail](https://github.com/rakheshkrishna2005/NewsSpyder/blob/main/public/3.png)
+![Search and Filter](https://github.com/rakheshkrishna2005/NewsSpyder/blob/main/public/4.png)
