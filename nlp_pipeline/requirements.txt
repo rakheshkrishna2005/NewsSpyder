@@ -1,0 +1,14 @@
+scrapy
+beautifulsoup4
+pymongo
+scikit-learn
+nltk
+networkx
+langchain
+google-generativeai
+tiktoken
+numpy
+pandas
+python-dateutil
+tzlocal
+requests
