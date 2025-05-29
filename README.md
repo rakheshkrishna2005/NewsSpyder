@@ -46,7 +46,57 @@
 
 ## 🏗️ System Architecture
 
-![Architecture Diagram](https://github.com/rakheshkrishna2005/NewsSpyder/blob/main/public/architecture.png)
+```mermaid
+flowchart TD
+    %% Combined Data Scraping and Parsing
+    A1["News scraped and HTML parsed using Scrapy + BeautifulSoup"] --> A2["Raw data stored in MongoDB Atlas"]
+
+    %% Combined LLM Structuring
+    A2 --> A3["LLM (Gemini) Structuring and stored in MongoDB Collection"]
+
+    %% Preprocessing & Analysis
+    A3 --> A4["Text Preprocessing"]
+    A2 --> A4
+    A3 --> A4
+
+    subgraph Analysis[" "]
+        direction TB
+        A4 --> A5["TF-IDF and N-Grams"]
+        A4 --> A6["Text Ranking"]
+        A4 --> A7["RAKE Algorithm"]
+        A5 --> A6
+        A6 --> A7
+    end
+
+    %% Keywords Store
+    A5 --> A8["Keywords Stored in MongoDB"]
+    A6 --> A8
+    A7 --> A8
+
+    %% Combined Frontend Stack
+    subgraph Frontend[" "]
+        direction TB
+        B1["MongoDB API + Fetch Articles"] --> B2["Display Articles + Keywords"]
+    end
+
+    %% Connections
+    A8 --> B1
+    B2 --> A8
+    A8 --> A4
+
+    %% Class Assignments
+    class A1,A2 scraping
+    class A3,A4,A5,A6,A7,A8 processing
+    class B1 api
+    class B2 visualization
+
+    %% Style Definitions
+    classDef scraping fill:#bbdefb,stroke:#1e88e5,color:#000,font-weight:bold
+    classDef processing fill:#c8e6c9,stroke:#388e3c,color:#000,font-weight:bold
+    classDef api fill:#e0b3ff,stroke:#6a1b9a,color:#000,font-weight:bold
+    classDef visualization fill:#fff59d,stroke:#fbc02d,color:#000,font-weight:bold
+
+```
 
 ## 📸 UI Snapshots
 
