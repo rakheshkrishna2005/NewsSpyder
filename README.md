@@ -41,7 +41,7 @@
 
 ### 🖥️ Frontend
 
-* Fully responsive **Next.js 14** app
+* Fully responsive **Next.js 15** app
 * SSR, dynamic routes, fuzzy search, dark mode
 
 ## 🏗️ System Architecture
