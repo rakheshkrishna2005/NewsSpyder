@@ -2,6 +2,14 @@
 
 🌐 [**Live Deployed Website**](https://news-spyder.vercel.app/)
 
+## 📚 Table of Contents
+
+- [Key Features](https://github.com/rakheshkrishna2005/NewsSpyder?tab=readme-ov-file#-key-features)
+- [Tech Stack](https://github.com/rakheshkrishna2005/NewsSpyder?tab=readme-ov-file#️-tech-stack)
+- [Core Modules](https://github.com/rakheshkrishna2005/NewsSpyder?tab=readme-ov-file#-core-modules)
+- [System Architecture](https://github.com/rakheshkrishna2005/NewsSpyder?tab=readme-ov-file#️-system-architecture)
+- [UI Snapshots](https://github.com/rakheshkrishna2005/NewsSpyder?tab=readme-ov-file#-ui-snapshots)
+
 ## 🚀 Key Features
 
 * 📰 **Automated Scraping** — Powered by **Scrapy + BeautifulSoup**, fetching real-time data from *The Hacker News*
