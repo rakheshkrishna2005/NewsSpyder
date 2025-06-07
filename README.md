@@ -1,6 +1,7 @@
 # 📰 News Spyder - AI Powered Cybersecurity News Aggregator
 
 🌐 [**Live Deployed Website**](https://news-spyder.vercel.app/)
+📺 [**NewsSpyder Web App Demo Video**](https://youtu.be/AyApdcco5N4)
 
 ## 📚 Table of Contents
 
